@@ -2,7 +2,7 @@
  * 
  * LM35 Library 
  * LM35.CPP
- * VERSION: 1.0
+ * VERSION: 1.0.1
  * 
  * Author: Guilherme Gomes Zucco
  * 
