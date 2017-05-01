@@ -2,7 +2,7 @@
  * 
  * LM35 Library 
  * 
- * VERSION: 1.0
+ * VERSION: 1.0.1
  * 
  * Author: Guilherme Gomes Zucco
  * 
