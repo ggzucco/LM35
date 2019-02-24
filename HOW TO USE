@@ -1,0 +1,35 @@
+// A sample of code of how to use the lib
+
+// The Lib
+#include <LM35.h>
+
+//Set the sensor
+// Configuration: LM35 variable(pin);
+LM35 temp(A0);
+
+void setup()
+{
+  //Set the pin mode
+  pinMode(A0, INPUT);
+
+  //Set and start the serial port
+  Serial.begin(9600);
+}
+
+void loop()
+{
+  Serial.print("Temp - ");  
+  
+  Serial.print(temp.cel()); // Converts the data to Celsius and sends to serial
+  Serial.print(" C  - ");
+  
+  Serial.print(temp.fah()); // Converts the data to Celsius and sends to serial
+  Serial.print(" F  - ");   
+  
+  Serial.print(temp.kel()); // Converts the data to Kelvin and sends to serial
+  Serial.println(" K");
+ 
+  Serial.println(" "); // Linha em Branco
+
+  delay(1000); // Delay to watch better the results
+}
